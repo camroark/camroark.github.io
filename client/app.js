@@ -1,6 +1,6 @@
-var myApp = angular.module('cameronroark', ['ngRoute'])
+var personalwebsite = angular.module('personalwebsite', ['ngRoute'])
 //Router Config
-.config(function (['$routeProvider'],
+.config(['$routeProvider',
    function($routeProvider) {
       console.log('routeProvider: ', routeProvider);
       $routeProvider.
@@ -8,8 +8,7 @@ var myApp = angular.module('cameronroark', ['ngRoute'])
             templateUrl: './homeView/home.html',
             controller: './homeView/home.js'
          });
-   }
-));
+}]);
 //
 // .config(['cfpLoadingBarProvider', function(cfpLoadingBarProvider) {
 //     cfpLoadingBarProvider.includeSpinner = false;

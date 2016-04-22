@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='personalwebsite'>
 <head>
    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
 </head>
@@ -8,14 +8,15 @@
    <div ng-view></div>
 
 </body>
-      <script src='./app.js'></script>
+      <script src="./bower_components/angular/angular.min.js"></script>
+      <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+      <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+      <script src="./bower_components/angular-material/angular-material.min.js"></script>
+
+      <script src='app.js'></script>
       <script src='./app/aboutView/about.js'></script>
       <script src='./app/homeView/home.js'></script>
       <script src='./app/professionView/profession.js'></script>
       <script src='./app/factories/main.js'></script>
 
-      <script src="./bower_components/angular/angular.min.js"></script>
-      <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
-      <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
-      <script src="./bower_components/angular-material/angular-material.min.js"></script>
 </html>
