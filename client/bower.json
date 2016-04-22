@@ -1,5 +1,5 @@
 {
-  "name": "personalwebsite",
+  "name": "client",
   "homepage": "https://github.com/camroark/cameronroark",
   "description": "",
   "main": "app.js",
@@ -8,12 +8,6 @@
     "Cameron Roark"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "angular": "^1.5.4",
     "angular-material": "^1.0.7"

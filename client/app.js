@@ -1,4 +1,4 @@
-var personalwebsite = angular.module('personalwebsite', ['ngRoute'])
+var personalwebsite = angular.module('uniqueName', ['ngRoute'])
 //Router Config
 .config(['$routeProvider',
    function($routeProvider) {
