@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<html ng-app="uniqueName">
+<html>
 <head>
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
+   <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
+   <div id="videoSearch">
+    <video autoplay poster="" id="bgvid">
+      <source src="assets/video.mp4" type="video/mp4">
+    </video>
+   </div>
 
-   <div ng-view></div>
+   <div layout='row' id='navBar'>
+      <div flex='5'>
+      </div>
+      <div flex='10' layout="row" layout-align="center center">
+         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Contact</md-button>
+      </div>
+      <div flex='55'></div>
+      <div flex='30' layout="row" layout-align="space-around center">
+         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Home</md-button>
+         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Projects</md-button>
+         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>About</md-button>
+      </div>
+   </div>
 
+   <div class='intro' layout='column' layout-align="center center">
+      <h1 class='title'> Cameron Roark </h1>
+      <h1 class='title'> Software Developer </h1>
+      <h1 class='title'> How often do I make Awesom? </h1>
+      <h1 class='title'> Often.</h1>
+   </div>
+
+   <div class='content'>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+   <div>
+      <h1> A BUNCH OF STUFF DOWN HERE LOL </h1>
+   </div>
+</div>
 </body>
-      <script src="./bower_components/angular/angular.js"></script>
+      <script src="./bower_components/angular/angular.min.js"></script>
+      <script src="./bower_components/angular-route/angular-route.min.js"></script>
       <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
       <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
       <script src="./bower_components/angular-material/angular-material.min.js"></script>
-      <script>
-      console.log(angular === undefined);
-      </script>
-      <script src='app.js'></script>
-      <script src='./app/aboutView/about.js'></script>
-      <!-- <script src='./app/homeView/home.js'></script> -->
-      <script src='./app/professionView/profession.js'></script>
-      <script src='./app/factories/main.js'></script>
 
+      <script src='app.js'></script>
 </html>
