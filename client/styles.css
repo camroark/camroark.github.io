@@ -7,6 +7,15 @@
    opacity: .9;
    background-color: black;
 }
+
+md-sidenav-left {
+   position: fixed;
+   border: solid 2px black;
+   background-color: black;
+   color: white;
+   z-index: 100;
+}
+
 .intro {
    height: 75%;
    opacity: .7;
