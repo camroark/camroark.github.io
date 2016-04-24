@@ -1,50 +1,55 @@
 
 #navBar {
    padding: 20px;
+   position: relative;
    border: solid white;
    font-size: 20px;
    color: white;
-   opacity: .9;
    background-color: black;
+   z-index: 1;
 }
 
-md-sidenav-left {
+.md-sidenav-left {
+   /*Fixed works*/
    position: fixed;
-   border: solid 2px black;
+   border: solid white;
    background-color: black;
    color: white;
-   z-index: 100;
+   z-index: 60;
 }
 
 .intro {
-   height: 75%;
+   height: 200%;
    opacity: .7;
-   /*z-index: 1;*/
    background-color: black;
    position: relative;
+   z-index: 0;
 }
+
 .content {
    margin-top: -3%;
-   /*z-index: 100;*/
-   /*opacity: .9;*/
    background-color: white;
    position:relative;
+   z-index: 3;
 }
+
 video {
-  opacity: .7;
+  opacity: .9;
   min-width: 100%;
   height: 100%;
-  /*z-index: 1;*/
   position:absolute;
   background-color: black;
-  /*background: url('') no-repeat;*/
-  /*background-size: cover;*/
+  z-index: 0;
 }
+
 .title {
+   position: relative;
    color: white;
    opacity: .8;
+   z-index: 0  ;
 }
-.nav {
-   color: red;
-   opacity: .5;
+
+a {
+   color: white;
+   text-decoration: none;
 }

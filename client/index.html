@@ -5,12 +5,6 @@
    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-   <div id="videoSearch">
-    <video autoplay poster="" id="bgvid">
-      <source src="assets/video.mp4" type="video/mp4">
-    </video>
-   </div>
-
    <!-- CONTACT SIDE NAV -->
    <div layout='row' id='navBar'>
       <div flex='5'>
@@ -18,7 +12,28 @@
       <div flex='10' layout="row" layout-align="center center">
          <div layout="row" ng-controller="MyController">
         <md-sidenav md-component-id="left" class="md-sidenav-left">
-          Left Nav!
+           <!-- SideNavContent -->
+           <h3>Contact Cameron</h3>
+           <div class='Phone'>
+             <h4> Phone </h4>
+             <span>(208) 906-5594</span>
+           </div>
+           <div>
+             <h4> Email </h4>
+              <form>
+                <md-input-container>
+                  <label for="name">Test input</label>
+                  <input type="text" id="testInput"
+                         ng-model="data" md-autofocus>
+                </md-input-container>
+                 <md-input-container>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="emailSubject"
+                           ng-model="data" md-autofocus>
+                 </md-input-container>
+              </form>
+           </div>
+
         </md-sidenav>
           <md-button ng-click="openLeftMenu()">
             Contact
@@ -29,57 +44,26 @@
       </div>
       <div flex='55'></div>
       <div flex='30' layout="row" layout-align="space-around center">
-         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Home</md-button>
-         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Projects</md-button>
-         <md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>About</md-button>
+         <a ui-sref="homeView"><md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Home</md-button></a>
+         <a ui-sref='projectsView'><md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Projects</md-button></a>
+         <a ui-sref='aboutView'><md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>About</md-button></a>
       </div>
    </div>
 
-   <div class='intro' layout='column' layout-align="center center">
-      <h1 class='title'> Cameron Roark </h1>
-      <h1 class='title'> Software Developer </h1>
-      <h4 class='title'> How often do I make Awesome? Often.</h4>
-   </div>
+   
+   <div ui-view class="scrollable-content">
 
-   <!-- CONTENT -->
-   <h1 class='content' layout='column' layout-align='center center'>Tech Experience</h2>
-   <div class='content' layout='row' layout-align='space-around center'>
-      <div class='client' layout='column' layout-align='space-around center' flex>
-         <h3>Client</h3 flex=20>
-         <img src='./assets/laptop.png' height="50%" width="50%" flex=40>
-         <ul flex=40>
-            <li>AngularJS</li>
-            <li>Angular2</li>
-            <li>Ionic</li>
-            <li>Angular Material</li>
-         </ul>
-      </div>
-      <div class='server' layout='column' layout-align='space-around center' flex>
-         <h3>Server</h3 flex=20>
-         <img src='./assets/server.png' height="50%" width="50%" flex=40>
-         <ul flex=40>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>API's</li>
-         </ul>
-      </div>
-      <div class='database' layout='column' layout-align='space-around center' flex>
-         <h3>Database</h3 flex=20>
-         <img src='./assets/database.png' height="35%" width="35%" flex=40>
-         <ul flex=40>
-            <li>Neo4j (Graph)</li>
-            <li>MongoDB (NoSQL)</li>
-            <li>SQL (SQL)</li>
-         </ul>
-      </div>
+            <!-- UI Router inserts here -->
    </div>
-
-   </body>
+</body>
       <script src="./bower_components/angular/angular.min.js"></script>
-      <script src="./bower_components/angular-route/angular-route.min.js"></script>
+      <script src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
       <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
       <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
       <script src="./bower_components/angular-material/angular-material.min.js"></script>
 
       <script src='app.js'></script>
+      <script src='./homeView/home.js'></script>
+      <script src='./aboutView/about.js'></script>
+      <script src='./projectsView/projects.js'></script>
 </html>
