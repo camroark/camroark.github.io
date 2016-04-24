@@ -17,7 +17,7 @@
 .content {
    margin-top: -3%;
    /*z-index: 100;*/
-   opacity: .9;
+   /*opacity: .9;*/
    background-color: white;
    position:relative;
 }
