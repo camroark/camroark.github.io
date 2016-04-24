@@ -16,6 +16,6 @@ var myApp = angular.module('personalWebsite', ['ngMaterial', 'ui.router'])
          templateUrl: './aboutView/about.html',
          controller: 'aboutCtrl'
       });
-      
+
       $urlRouterProvider.otherwise('/home');
-})
+});

@@ -4,9 +4,9 @@
    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.min.css">
    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
-<body>
+<body layout='column'>
    <!-- CONTACT SIDE NAV -->
-   <div layout='row' id='navBar'>
+   <div layout='row' id='navBar' flex=15>
       <div flex='5'>
       </div>
       <div flex='10' layout="row" layout-align="center center">
@@ -50,8 +50,8 @@
       </div>
    </div>
 
-   
-   <div ui-view class="scrollable-content">
+
+   <div ui-view class="scrollable-content" flex=85 layout="column">
 
             <!-- UI Router inserts here -->
    </div>
