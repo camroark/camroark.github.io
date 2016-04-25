@@ -48,3 +48,71 @@ a {
    color: white;
    text-decoration: none;
 }
+.title {
+   background-color: black;
+   opacity: 1;
+   color: white;
+}
+/*.projects {
+   background-color: white;
+   color: black;
+   position: relative;
+   margin-top: 10%;
+}*/
+div p {
+   margin-top: -1.5%;
+}
+.cool {
+   /*border: solid 2px white;*/
+   position: relative;
+   background-color: black;
+   /*width: 100%;*/
+   /*z-index: 1;*/
+}
+
+.ll {
+   border-top: solid 4px white;
+   border-bottom: solid 4px white;
+   border-left: solid 2px white;
+   border-right: solid 4px white;
+   color:white;
+   opacity: .5;
+}
+.ll:not([disabled]):hover {
+  opacity: 1;
+  /*font-weight: bold;*/
+  border-left: 4px solid white;
+  margin-left: -2px;
+}
+
+.dws {
+   border-top: solid 4px white;
+   border-bottom: solid 4px white;
+   border-left: solid 2px white;
+   border-right: solid 2px white;
+   color:white;
+   opacity: .5;
+}
+.dws:not([disabled]):hover {
+  opacity: 1;
+  border-right: solid 4px white;
+  border-left: solid 4px white;
+  margin-left: -2px;
+  margin-right: -2px;
+  /*font-weight: bold;*/
+}
+
+.sp {
+   border-top: solid 4px white;
+   border-bottom: solid 4px white;
+   border-left: solid 4px white;
+   border-right: solid 2px white;
+   opacity: .5;
+   color:white;
+}
+.sp:not([disabled]):hover {
+  opacity: 1;
+  border-right: solid 4px white;
+  margin-right: -2px;
+  /*font-weight: bold;*/
+}
