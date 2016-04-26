@@ -78,12 +78,11 @@ div p {
    color:white;
    opacity: .5;
 }
-.ll:not([disabled]):hover {
+/*.ll:not([disabled]):hover {
   opacity: 1;
-  /*font-weight: bold;*/
   border-left: 4px solid white;
   margin-left: -2px;
-}
+}*/
 
 .dws {
    border-top: solid 4px white;
@@ -93,14 +92,13 @@ div p {
    color:white;
    opacity: .5;
 }
-.dws:not([disabled]):hover {
+/*.dws:not([disabled]):hover {
   opacity: 1;
   border-right: solid 4px white;
   border-left: solid 4px white;
   margin-left: -2px;
   margin-right: -2px;
-  /*font-weight: bold;*/
-}
+}*/
 
 .sp {
    border-top: solid 4px white;
@@ -110,9 +108,12 @@ div p {
    opacity: .5;
    color:white;
 }
-.sp:not([disabled]):hover {
+/*.sp:not([disabled]):hover {
   opacity: 1;
   border-right: solid 4px white;
   margin-right: -2px;
-  /*font-weight: bold;*/
+}*/
+
+.contact {
+   border-bottom: 0.5px white solid;
 }

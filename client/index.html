@@ -11,29 +11,15 @@
       </div>
       <div flex='10' layout="row" layout-align="center center">
          <div layout="row" ng-controller="MyController">
-        <md-sidenav md-component-id="left" class="md-sidenav-left">
+        <md-sidenav md-component-id="left" class="md-sidenav-left" layout='column'>
            <!-- SideNavContent -->
-           <h3>Contact Cameron</h3>
-           <div class='Phone'>
-             <h4> Phone </h4>
-             <span>(208) 906-5594</span>
-           </div>
-           <div>
-             <h4> Email </h4>
-              <form>
-                <md-input-container>
-                  <label for="name">Test input</label>
-                  <input type="text" id="testInput"
-                         ng-model="data" md-autofocus>
-                </md-input-container>
-                 <md-input-container>
-                    <label for="subject">Subject</label>
-                    <input type="text" id="emailSubject"
-                           ng-model="data" md-autofocus>
-                 </md-input-container>
-              </form>
-           </div>
-
+           <h3>Contact Me</h3>
+           <h4 class='contact'> Phone </h4>
+           <span>(208) 906-5594</span>
+           <h4 class='contact'> Email </h4>
+           <span>cam@cameronroark.com</span>
+           <h4 class='contact'> LinkedIn </h4>
+           <a target="_blank" href='http://www.linkedin.com/in/cameronroark'><span> linkedin.com/in/cameronroark</span></a>
         </md-sidenav>
           <md-button ng-click="openLeftMenu()">
             Contact

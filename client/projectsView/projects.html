@@ -6,7 +6,7 @@
 
 <!-- 30 -->
 <div class='cool' layout='row' layout-align='center' flex=30>
-   <div class ='sp' layout='column' layout-align='space-around center'>
+   <div class ='sp' layout='column' layout-align='space-around center' ng-click='filter("searchParty")'>
       <div layout='column' layout-align='center center' flex=70>
          <img src='./assets/sp.png' height="60%" width="60%">
       </div>
@@ -16,7 +16,7 @@
          <a target="_blank" href='http://getsearchparty.com'><p>getsearchparty.com</p></a>
       </div>
    </div>
-   <div class='dws' layout='column' layout-align='space-around center'>
+   <div class='dws' layout='column' layout-align='space-around center' ng-click='filter("drivewayShare")'>
       <div layout='column' layout-align='center center' flex=70>
          <img src='./assets/drivewayshare.png' height="60%" width="60%">
       </div>
@@ -26,7 +26,7 @@
          <a target="_blank" href= 'http://drivewayshareapp.heroku.com'><p>drivewayshareapp.com</p></a>
       </div>
    </div>
-   <div class='ll' layout='column' layout-align='space-around center'>
+   <div class='ll' layout='column' layout-align='space-around center' ng-click='filter("lunchline")'>
       <div layout='column' layout-align='center center' flex=70>
          <img src='./assets/lunchline.png' height="60%" width="60%">
       </div>
@@ -43,7 +43,7 @@
    <div class='content' layout='row' layout-align='center'>
       <div class='client' layout='column' layout-align='space-around center' flex>
          <h3>Client</h3 flex=20>
-         <img src='./assets/laptop.png' height="30%" width="30%" flex=40>
+         <img src='./assets/laptop.png' height="30%" width="40%" flex=40>
          <div flex=40>
             <div>AngularJS</div>
             <div>Angular2</div>
@@ -53,7 +53,7 @@
       </div>
       <div class='server' layout='column' layout-align='space-around center' flex>
          <h3>Server</h3 flex=20>
-         <img src='./assets/server.png' height="30%" width="30%" flex=40>
+         <img src='./assets/server.png' height="30%" width="40%" flex=40>
          <ul flex=40>
             <div>Node.js</div>
             <div>Express</div>
@@ -62,7 +62,7 @@
       </div>
       <div class='database' layout='column' layout-align='space-around center' flex>
          <h3>Database</h3 flex=20>
-         <img src='./assets/database.png' height="25%" width="25%" flex=40>
+         <img src='./assets/database.png' height="25%" width="35%" flex=40>
          <ul flex=40>
             <div>Neo4j (Graph)</div>
             <div>MongoDB (NoSQL)</div>
