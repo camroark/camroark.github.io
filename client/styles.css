@@ -1,4 +1,3 @@
-
 #navBar {
    padding: 20px;
    position: relative;
@@ -10,7 +9,6 @@
 }
 
 .md-sidenav-left {
-   /*Fixed works*/
    position: fixed;
    border: solid white;
    background-color: black;
@@ -19,7 +17,7 @@
 }
 
 video {
-  margin-top: -8%;
+  margin-top: -8.25%;
   opacity: .9;
   width: 100%;
   height: 100%;
@@ -31,7 +29,7 @@ video {
 .intro {
    opacity: .7;
    width: 100%;
-   height: 800px;
+   height: 810px;
    background-color: black;
    position: relative;
    z-index: 0;
@@ -48,26 +46,28 @@ a {
    color: white;
    text-decoration: none;
 }
+
+.logo {
+   font-weight: bold;
+   color: black;
+   font-size: 2em;
+}
+
+a div {
+   color:black;
+}
+
 .title {
    background-color: black;
    opacity: 1;
    color: white;
 }
-/*.projects {
+
+.cool {
+   position: relative;
    background-color: white;
    color: black;
-   position: relative;
-   margin-top: 10%;
-}*/
-div p {
-   margin-top: -1.5%;
-}
-.cool {
-   /*border: solid 2px white;*/
-   position: relative;
-   background-color: black;
-   /*width: 100%;*/
-   /*z-index: 1;*/
+   border-top: 2px black solid;
 }
 
 .ll {
@@ -75,8 +75,8 @@ div p {
    border-bottom: solid 4px white;
    border-left: solid 2px white;
    border-right: solid 4px white;
-   color:white;
-   opacity: .5;
+   color:black;
+   opacity: 1;
 }
 /*.ll:not([disabled]):hover {
   opacity: 1;
@@ -89,8 +89,8 @@ div p {
    border-bottom: solid 4px white;
    border-left: solid 2px white;
    border-right: solid 2px white;
-   color:white;
-   opacity: .5;
+   color:black;
+   opacity: 1;
 }
 /*.dws:not([disabled]):hover {
   opacity: 1;
@@ -105,8 +105,8 @@ div p {
    border-bottom: solid 4px white;
    border-left: solid 4px white;
    border-right: solid 2px white;
-   opacity: .5;
-   color:white;
+   opacity: 1;
+   color:black;
 }
 /*.sp:not([disabled]):hover {
   opacity: 1;
