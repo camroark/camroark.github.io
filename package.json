@@ -4,7 +4,8 @@
   "description": "Personal website showing off projects, interests and developer capabilities.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "Cameron Roark",
   "license": "ISC",
@@ -19,5 +20,8 @@
     "angular-sanitize": "^1.5.5",
     "angular-ui-router": "^0.2.18",
     "express": "^4.13.4"
-  }
+},
+  "engines": {
+    "node": "0.10.x"
+}
 }
