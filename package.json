@@ -1,5 +1,5 @@
 {
-  "name": "personalwebsite",
+  "name": "personalWebsite",
   "version": "1.0.0",
   "description": "Personal website showing off projects, interests and developer capabilities.",
   "main": "index.js",
@@ -10,19 +10,19 @@
   "author": "Cameron Roark",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.5",
-    "angular-animate": "^1.5.5",
-    "angular-aria": "^1.5.5",
-    "angular-material": "^1.0.8",
-    "angular-messages": "^1.5.5",
-    "angular-mocks": "^1.5.5",
-    "angular-route": "^1.5.5",
-    "angular-sanitize": "^1.5.5",
-    "angular-ui-router": "^0.2.18",
-    "express": "^4.13.4"
+    "angular": "*",
+    "angular-animate": "*",
+    "angular-aria": "*",
+    "angular-material": "*",
+    "angular-messages": "*",
+    "angular-mocks": "*",
+    "angular-route": "*",
+    "angular-sanitize": "*",
+    "@uirouter/angularjs": "*",
+    "express": "*"
 },
   "engines": {
-     "npm":  "3.8.8",
-    "node": "5.7.1"
+     "npm":  "*",
+    "node": "*"
 }
 }

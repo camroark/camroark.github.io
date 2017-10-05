@@ -1,21 +1,16 @@
-var myApp = angular.module('personalWebsite', ['ngMaterial', 'ui.router'])
-.config(function ($stateProvider, $urlRouterProvider) {
-   $stateProvider
-      .state('homeView', {
-         url: '/home',
-         templateUrl: './homeView/home.html',
-         controller: 'MyController'
-      })
-      .state('projectsView', {
-         url: '/projects',
-         templateUrl: './projectsView/projects.html',
-         controller: 'projectsCtrl'
-      })
-      .state('aboutView', {
-         url: '/about',
-         templateUrl: './aboutView/about.html',
-         controller: 'aboutCtrl'
-      });
+var myApp = angular.module('personalWebsite', ['ngMaterial', 'ngRoute']);
 
-      $urlRouterProvider.otherwise('/home');
+myApp.config(function($routeProvider) {
+   $routeProvider
+      .when('/', {
+        templateUrl: './homeView/home.html'
+      })
+      .when('projects', {
+         url: '/projects',
+         templateUrl: './projectsView/projects.html'
+      })
+      .otherwise({
+        url: "/",
+        templateUrl: './homeView/home.html'
+      })
 });

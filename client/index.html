@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html ng-app='personalWebsite'>
 <head>
-   <link rel="stylesheet" href="../node_modules/angular-material/angular-material.min.css">
    <link rel="stylesheet" type="text/css" href="styles.css"/>
+   <link rel="stylesheet" type="text/css" href="./node_modules/angular-material/angular-material.css">
 </head>
-<body layout='column'>
-   <!-- CONTACT SIDE NAV -->
-   <div layout='row' id='navBar' flex=15>
-      <div flex='5'>
-      </div>
-      <div flex='10' layout="row" layout-align="center center">
-         <div layout="row" ng-controller="MyController">
-        <md-sidenav md-component-id="left" class="md-sidenav-left" layout='column'>
-           <!-- SideNavContent -->
-           <h3>Contact Me</h3>
-           <h4 class='contact'> Phone </h4>
-           <span>(208) 906-5594</span>
-           <h4 class='contact'> Email </h4>
-           <span>cam@cameronroark.com</span>
-           <h4 class='contact'> Other </h4>
-           <div layout="row" layout-align="space-around center">
-              <a target="_blank" href='http://www.linkedin.com/in/cameronroark'><img src="./assets/linkedInIcon.png"></a>
-              <a target="_blank" href='http://www.github.com/camroark'><img src="./assets/githubIcon.png"></a>
-              <a target="_blank" href='http://www.twitter.com/camroark1'><img src="./assets/twitterIcon.png"></a>
-              <a target="_blank" href='http://camroark.blogspot.com'><img src="./assets/bloggerIcon.png"></a>
-           </div>
-        </md-sidenav>
-          <md-button ng-click="openLeftMenu()">
-            Contact
-        </md-content>
-        <md-sidenav md-component-id="right" md-is-locked-open="$mdMedia('min-width: 300px')" class="md-sidenav-right">
-        </md-sidenav>
-      </div>
-      </div>
-      <div flex='55'></div>
-      <div flex='30' layout="row" layout-align="space-around center">
-         <a ui-sref="homeView"><md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Home</md-button></a>
-         <a ui-sref='projectsView'><md-button ng-mouseover='changeColor' ng-style='hover' class='.nav'>Projects</md-button></a>
-      </div>
-   </div>
+<body layout=column>
+  <!--Navigation Bar -->
+  <div layout=row id=nav_bar flex=10>
+       <div flex=5>
+       </div>
+       <div flex=10 layout=row layout-align="center center">
+          <div layout="row" ng-controller="MyController">
+            <md-sidenav md-component-id="left" class="contact md-sidenav-left" layout='column'>
+              <!-- SideNavContent -->
+              <h2 flex=15 layout-align="center center">Contact Me</h2>
+              <h4> Phone </h4>
+                <span>(208) 906-5594</span>
+              <h4> Email </h4>
+                <span>cam@cameronroark.com</span>
+              <h4> Other </h4>
+                <div layout="row" layout-align="space-around center">
+                   <a target="_blank" href='http://www.linkedin.com/in/cameronroark'><img src="./assets/linkedInIcon.png"></a>
+                   <a target="_blank" href='http://www.github.com/camroark'><img src="./assets/githubIcon.png"></a>
+                   <a target="_blank" href='http://www.twitter.com/camroark1'><img src="./assets/twitterIcon.png"></a>
+                   <a target="_blank" href='http://camroark.blogspot.com'><img src="./assets/bloggerIcon.png"></a>
+                </div>
+            </md-sidenav>
 
+            <md-button ng-click="openLeftMenu()" class='nav_button'>
+             Contact
+            </md-content>
+         <md-sidenav md-component-id="right" md-is-locked-open="$mdMedia('min-width: 300px')" class="md-sidenav-right">
+         </md-sidenav>
+       </div>
+       </div>
+       <div flex=55></div>
+       <div flex=30 layout=row layout-align="space-around center">
+          <a href="#!home" class='nav_button'>
+            <md-button ng-mouseover='changeColor' ng-style='hover'>Home</md-button>
+          </a>
+          <a href='#!projectsView' class='nav_button'>
+            <md-button ng-mouseover='changeColor' ng-style='hover'>Work</md-button>
+          </a>
+       </div>
+    </div>
 
-   <div ui-view class="scrollable-content" flex=85 layout="column">
-
-            <!-- UI Router inserts here -->
+  <!--Content -->
+  <div class="ng-view" flex=90 layout=column>
+    <!-- ngRoute inserts here -->
    </div>
 </body>
-      <script src="./node_modules/angular/angular.min.js"></script>
-      <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-      <script src="./node_modules/angular-aria/angular-aria.min.js"></script>
-      <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
-      <script src="./node_modules/angular-material/angular-material.min.js"></script>
+    <!--Angular Dependencies-->
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-route/angular-route.min.js"></script>
+    <script src="./node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="./node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="./node_modules/angular-material/angular-material.min.js"></script>
 
-      <script src='app.js'></script>
-      <script src='./homeView/home.js'></script>
-      <script src='./aboutView/about.js'></script>
-      <script src='./projectsView/projects.js'></script>
+    <!--Local Dependencies-->
+    <script src='app.js'></script>
+    <script src='./homeView/home.js'></script>
 </html>
