@@ -18,10 +18,12 @@
   </div>
 
   <!--More-->
-  <div flex=10 layout=column layout-align="center center" class='work'>
-    <div class='box'>
-      <h3>See my work</h3>
-    </div>
+  <div flex=10 layout=column layout-align="center center" ng-controller="MyController">
+    <a href="#!projectsView" style="text-decoration: none; text-decoration-color: none; z-index: 1;">
+      <div ng-style="color" ng-mouseenter="changeColor(true)" ng-mouseleave="changeColor(false)">
+        <h3 id="work">See my work</h3>
+      </div>
+    </a>
   </div>
   <div flex=5></div>
 </div>
