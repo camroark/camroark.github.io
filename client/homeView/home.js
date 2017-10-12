@@ -1,13 +1,13 @@
-myApp.controller('MyController', function($scope, $mdSidenav, $window) {
+myApp.controller('HomeController', function($scope, $mdSidenav, $window) {
    $scope.openLeftMenu = function() {
      $mdSidenav('left').toggle();
    };
 
    var default_color = {
-     "color": "white",
-     "border": "solid 5px white",
-     "opacity": "1",
-     "background-color": "none",
+     "color": "black",
+     "border": "solid 3px black",
+     "opacity": "0.7",
+     "background-color": "white",
      "font-size": "14px",
      "padding-left": "10px",
      "padding-right": "10px",
@@ -16,12 +16,13 @@ myApp.controller('MyController', function($scope, $mdSidenav, $window) {
 
    var active_color = {
      "color": 'black',
-     "border": "solid 10px white",
-     "opacity": "0.5",
-     "font-size": "100px",
+     "border": "solid 10px black",
+     "opacity": "0.7",
+     "font-size": "50px",
      "background-color": "white",
-     "padding-left": "0",
-     "padding-right": "0",
+     "padding-left": "15px",
+     "padding-right": "15px",
+     "margin-top": "-100px",
      "z-index": 1
    }
 
@@ -61,9 +62,9 @@ myApp.controller('MyController', function($scope, $mdSidenav, $window) {
    $scope.changeColor = function(bool) {
       if(bool === true) {
           restart = true;
-          $scope.color = active_color;
           var work = $("#work");
           work.html("SEE MEH PRETTIES");
+          $scope.color = active_color;
           console.log(work)
       } else if (bool === false) {
           restart = false;
@@ -71,8 +72,4 @@ myApp.controller('MyController', function($scope, $mdSidenav, $window) {
           response();
       }
     };
-
-
-
-
 });

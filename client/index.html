@@ -10,7 +10,7 @@
        <div flex=5>
        </div>
        <div flex=10 layout=row layout-align="center center">
-          <div layout="row" ng-controller="MyController">
+          <div layout="row" ng-controller="HomeController">
             <md-sidenav md-component-id="left" class="contact md-sidenav-left" layout='column'>
               <!-- SideNavContent -->
               <h2 flex=15 layout-align="center center">Contact Me</h2>
@@ -39,7 +39,7 @@
           <a href="#!home" class='nav_button'>
             <md-button ng-mouseover='changeColor' ng-style='hover'>Home</md-button>
           </a>
-          <a href='#!projectsView' class='nav_button'>
+          <a href='#!projects' class='nav_button'>
             <md-button ng-mouseover='changeColor' ng-style='hover'>Work</md-button>
           </a>
        </div>
@@ -63,5 +63,4 @@
     <!--Local Dependencies-->
     <script src='app.js'></script>
     <script src='./homeView/home.js'></script>
-
 </html>

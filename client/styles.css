@@ -28,11 +28,12 @@ video {
 .platform {
    opacity: .7;
    background-color: white;
+   border: black 3px solid;
    position: relative;
 }
 
 .title {
-   opacity: .8;
+  font-family: "Helvetica Neue";
    background-color: white;
    position: relative;
    color: black;
@@ -42,6 +43,7 @@ video {
 .work {
   color: white;
   z-index: 1;
+  font-family: "Helvetica Neue";
 }
 
 /* --- Contact --- */
